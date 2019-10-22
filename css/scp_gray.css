@@ -1,0 +1,228 @@
+:root {
+	/**
+	 * Theme:    SCP Foundation
+	 * Author:   WTERH
+	 * Color:    GRAY
+	 * GitHub:   https://github.com/wterh/scp-theme
+	 * Site:     https://wterh.ru/scp/
+	 * Telegram: https://t.me/wterh
+	 */
+	
+	/* GARY */
+	--border: #444444;
+	--title: #888;
+	--header: url('https://wterh.ru/scp/gray_body.png');
+	--icon-default: hue-rotate(0deg);
+	--icon-expand: hue-rotate(0deg);
+	--icon-forum: hue-rotate(0deg);
+	--icon-help: hue-rotate(0deg);
+	--icon-letter: hue-rotate(0deg);
+	--icon-main: hue-rotate(0deg);
+	--icon-series: hue-rotate(0deg);
+	--icon-gray: grayscale(1);
+	
+	--background: #111;
+	--text: #aaa;
+}
+a {
+	color: var(--title) !important;
+}
+div#container-wrap {
+	background-image: var(--header);
+	background-color:#000;
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+#header,
+#top-bar {
+	width: 840px;
+}
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+	background: var(--background);
+	color: var(--text);
+}
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus,
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+	background: var(--border);
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+	border-top: 1px solid var(--border);
+	border-bottom: 1px solid var(--border);
+}
+.page-rate-widget-box .rate-points {
+	background-color: var(--background) !important;
+	border: 1px solid var(--border) !important;
+}
+.page-rate-widget-box .cancel {
+	background-color: var(--background) !important;
+	border: 1px solid var(--border) !important;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+	background: var(--text);
+}
+.page-rate-widget-box .cancel a:hover {
+	background: var(--text);
+}
+.menu-item img[alt='help.png'] {
+	filter: var(--icon-help) var(--icon-gray);
+}
+.menu-item img[alt='default.png'] {
+	filter: var(--icon-help) var(--icon-gray);
+}
+.menu-item img[alt='expand.png'] {
+	filter: var(--icon-help) var(--icon-gray);
+}
+.menu-item img[alt='forum.png'] {
+	filter: var(--icon-help) var(--icon-gray);
+}
+.menu-item img[alt='letter.png'] {
+	filter: var(--icon-help) var(--icon-gray);
+}
+.menu-item img[alt='main.png'] {
+	filter: var(--icon-help) var(--icon-gray);
+}
+.menu-item img[alt='series.png'] {
+	filter: var(--icon-help) var(--icon-gray);
+}
+#content-wrap {
+	width: 830px !important;
+	margin: 20px auto !important;
+}
+#side-bar .heading {
+	color: var(--text) !important;
+	border-bottom:1px solid var(--border);
+}
+#page-content {
+	width: 600px;
+	font-size: 1.3em;
+	color: var(--text);
+}
+#page-title {
+	color: var(--title);
+}
+.collapsible-block-content > p,
+.scpnet-delayed-revealing > p,
+#page-content > p {
+	box-sizing: border-box;
+	padding: 10px;
+	border-radius: 10px;
+	background: var(--background);
+	box-shadow: 0 0 5px var(--border);
+	border: 1px solid var(--border);
+	color: var(--text);
+}
+#page-content p strong:first-child {
+	color: var(--title);
+}
+#page-content blockquote {
+	margin: 0;
+	background: var(--background);
+	border: 1px dashed var(--border);
+}
+#page-content blockquote p {
+	padding: 10px;
+	font-style: italic;
+	color: var(--text);
+}
+#page-content ul {
+	box-sizing: border-box;
+	padding: 10px 10px 10px 40px;
+	border-radius: 10px;
+	background: var(--background);
+	box-shadow: 0 0 5px var(--border);
+	border: 1px solid var(--border);
+}
+#top-bar ul li ul {
+	border: 1px solid var(--border);
+}
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+	background: var(--background);
+}
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+	background: var(--background);
+	border-top: 1px solid var(--border);
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+	background: var(--background);
+	color: #b01;
+}
+
+#page-title {
+	border-bottom: 1px solid var(--border);
+}
+#side-bar hr {
+	background-color: var(--border);
+}
+#toc {
+	background: var(--background);
+}
+.side-block {
+	border:1px solid var(--border) !important;
+	box-shadow: 0 2px 6px var(--border) !important;
+	background: var(--background) !important;
+}
+#main-content {
+	margin: 0 0em 0 18em;
+}
+#main-content h1 {
+	font-size: 1.2em;
+}
+#main-content hr {
+	margin: 1em 0;
+}
+.rimg span {
+	border-top: 1px solid var(--border);
+}
+.rimg,
+.limg,
+.scp-image-block,
+.block-right {
+	width: 100% !important;
+	text-align: center;
+	float: none !important;
+	margin: 10px 0 5px 0 !important;
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	box-shadow: 0 0 5px var(--border);
+	background: var(--background);
+	color: var(--title);
+}
+.scp-image-block img {
+	width: 100% !important;
+}
+.rimg br,
+.limg br {
+	display: none;
+}
+.scp-image-block,
+.scp-image-caption {
+	width: 100% !important;
+}
+audio {
+	outline: 0;
+}
+.page-tags span {
+	border-top: 1px solid var(--border);
+}
+.interwiki {
+	box-shadow:0 0 5px var(--border);
+	border: 1px solid var(--border);
+	background: #111 !important;
+}
+.interwiki__title {
+	color: var(--text);
+	border-bottom: 1px solid var(--border);
+}
+.interwiki__entry:before {
+	color: var(--title);
+}
